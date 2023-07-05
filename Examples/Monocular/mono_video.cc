@@ -57,7 +57,7 @@ int main(int argc, char **argv)
 
 
     cout << "Opening video: " << video_file_name << "...";
-    auto video = cv::VideoCapture(video_file_name);//, {cv::CAP_PROP_HW_ACCELERATION, cv::VIDEO_ACCELERATION_NONE});
+    auto video = cv::VideoCapture(video_file_name);
     if (!video.isOpened()) {
         std::cerr << "Unable to open the video." << std::endl;
         return 1;
